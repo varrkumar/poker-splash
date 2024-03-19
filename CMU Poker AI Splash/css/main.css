@@ -34,8 +34,8 @@ section.dark, footer.dark, #header.dark {
 }
 
 section.faq, footer.faq {
-  background-color: #000000;
-  color: white;
+  background-color: #e6e6e6;
+  color:black;
 }
 
 section.sponsers, footer.sponsers {
@@ -45,18 +45,18 @@ section.sponsers, footer.sponsers {
 }
 
 section.logistics, footer.logistics {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  background-color:#e6e6e6;
+  color: black;
 }
 
 section.team, footer.team {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: #e6e6e6;
 }
 
 section.contact, footer.contact {
   background-color: black;
-  color: white;
+  color: #e6e6e6;
 }
 
 
@@ -113,63 +113,31 @@ img {
   vertical-align: middle;
 }
 
-.platinum, .gold, .silver {
-  margin-top: 20px;
-}
-
-.gold {
-  border-top: solid 4px #c29a36;
-}
-
-.silver {
-  border-top: solid 4px #82969a;
-}
-
-.bronze {
-  border-top: solid 4px #7d6a52;
-}
-
-.platinum img {
-  margin: 20px;
-  max-height: 25vh;
-  max-width: 50%;
-}
-
-.gold img {
-  margin: 20px;
-  max-height: 12vh;
-  max-width: 30%;
-}
-
-.silver img {
-  margin: 20px;
-  max-height: 9vh;
-  max-width: 15%;
-}
 
 .team.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
   grid-gap: 20px;
-  padding-bottom: 40px; }
-  .team.grid .alumni img {
-    filter: grayscale(0) contrast(0.8); }
+  text-align: center;
+  padding-bottom: 40px;
+  margin: 0 auto; 
+}
 
 .banner {
   text-align: center;
   padding: 20px 0;
-  background-color: #000E1F; /* Dark navy blue background */
-  color: #fff; /* White text */
-  font-family: "Raleway", sans-serif; /* Same font as .title */
-  font-weight: 500; /* Same font weight as .title */
-  font-size: 3em; /* Same font size as .title */
-  line-height: 1.5em; /* Same line height as .title */
-  width: 100%; /* Make the banner go across the whole page */
-  position: relative; /* Center the banner */
+  background-color: #000E1F; 
+  color: #fff; 
+  font-family: "Raleway", sans-serif; 
+  font-weight: 500; 
+  font-size: 3em; 
+  line-height: 1.5em; 
+  width: 100%; 
+  position: relative; 
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 5vh; /* Same margin as .title */
+  margin-bottom: 5vh; 
 }
 
 .team.grid::before {
@@ -184,8 +152,9 @@ img {
   grid-column: 1 / 1; }
 
 .team.single {
-  color: rgb(0, 0, 0);
+  color: #e6e6e6;
   position: relative; }
+
   .team.single img {
     border-radius: 50%;
     width: 75%;
@@ -198,9 +167,38 @@ img {
     background-position: center;
     background-size: cover;
     filter: contrast(0.8); }
-  .team.single .name {
-    font-size: 1.5em; }
 
+  .team.single figcaption {
+  font-size: 1.5em; 
+  position: relative;
+  bottom: -200px; 
+  left: 0;
+  right: 0;
+  text-align: center;}
+
+  #schedule{
+    background-image: url('schedule.svg');
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    background-color: black; 
+  }
+
+  #sponsors{
+    background-image: url('sponsors.svg');
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    background-color: black; 
+  }
+
+    
 
 @media screen and (max-width: 730px) {
   .team.grid {
